@@ -1,3 +1,7 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* ICONS */
 .material-symbols-outlined {
   font-variation-settings:
@@ -6,9 +10,34 @@
   'GRAD' 0,
   'opsz' 24
 }
-/* ICONS END */
 
 /* (layout) Initial */
 
 
-/* Initial end */
+/* (components) Element */
+#element-container{
+  background-color: #423F3E;
+}
+
+#element-img{
+  width: 8vw;
+  height: 10vh;
+  border-radius: 6rem;
+  padding: 1rem;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .element-img { grid-area: 1 / 1 / 6 / 2; }
+  .element-user-container { grid-area: 1 / 2 / 2 / 5; }
+  .element-date-container { grid-area: 1 / 5 / 2 / 6; }
+  .element-title-container { grid-area: 2 / 2 / 3 / 5; }
+  .element-labels-container { grid-area: 3 / 2 / 4 / 5; }
+  .element-description-container { grid-area: 4 / 2 / 6 / 4; }
+  .element-reactions-container { grid-area: 5 / 4 / 6 / 6; }
