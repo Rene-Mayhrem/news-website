@@ -1,14 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Login from './components/Login';
+
+import Initial from './layout/Initial';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path='/' element={<Login />}/>
+          <Route exact path='/' element={<Initial />}/>
         </Routes>
       </Router>
 
