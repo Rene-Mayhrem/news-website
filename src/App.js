@@ -1,9 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import {BrowseRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Login/>}/>
+        </Routes>
+      </Router>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
