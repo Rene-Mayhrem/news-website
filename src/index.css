@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* GENERAL */
+:root { 
+  --primary-color: #F2BE22;
+  --btn-news: #F29727;
+  --btn-succesful: #1C82AD;
+  --btn-cancel: #FF0000;
+  /* ligth mode */
+  --full-light-container: #F7F9F9;
+  --other-container: #D5DBDB;
+  --primary-light-text: #000;
+  --second-light-container: #273746;
+  --element-light-container: #566573;
+  /* dark mode */
+  --full-dark-container: #2B2B2B;
+  --search-dark-container: #9BA4B5;
+  --primary-dark-text: #fff;
+  --second-dark-container: #9BA4B5;
+  --element-dark-container: #423F3E;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ICONS */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
+
+/* (layout) Initial */
+.initial-container {
+  align-items: normal;
+}
+
+.initial-btn-home {
+  position: absolute;
+  width: 2vw;
+  height: 3vh;
+  background-color: var(--primary-color);
+  border-radius: 10rem;
+  left: 1vw;
+  top: 1vw;
+}
+.initial-btn-home-icon {
+  color: var(--primary-light-text);
+  align-self: center;
+  padding-top: 0.5vh;
+  font-variation-settings: 
+  'wght' 700,
+  'FILL' 1
+}
+
+/* (components) InitialForm */
+.initial-form-container {
+  width: 30%;
+  height: 50vh;
+  border: 3px solid var(--primary-color);
+  border-radius: 0.5rem;
+  background: transparent;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+/* (components) Element */
+#element-container{
+  background-color: #423F3E;
+}
+
+#element-img{
+  width: 8vw;
+  height: 10vh;
+  border-radius: 6rem;
+  padding: 1rem;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .element-img { grid-area: 1 / 1 / 6 / 2; }
+  .element-user-container { grid-area: 1 / 2 / 2 / 5; }
+  .element-date-container { grid-area: 1 / 5 / 2 / 6; }
+  .element-title-container { grid-area: 2 / 2 / 3 / 5; }
+  .element-labels-container { grid-area: 3 / 2 / 4 / 5; }
+  .element-description-container { grid-area: 4 / 2 / 6 / 4; }
+  .element-reactions-container { grid-area: 5 / 4 / 6 / 6; }
