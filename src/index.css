@@ -5,10 +5,10 @@ body{
 /* ICONS */
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 1,
+  'FILL' 100,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 24
+  'opsz' 24;
 }
 
 /* (layout) Initial */
@@ -16,29 +16,93 @@ body{
 
 /* (components) Element */
 #element-container{
+  display: grid;
   background-color: #423F3E;
+  width: 55%;
+  grid-template-columns: auto 68% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  color: white;
+  border-radius: 5px;
+}
+
+.element-img{
+  grid-column: 1;
+  grid-row: 1/4;
 }
 
 #element-img{
-  width: 9vw;
-  width: 9vw;
+  width: 5vw;
   height: 10vh;
   border-radius: 6rem;
-  padding: 1rem;
+  margin-top: 20%;
 }
 
-.parent {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  }
+.element-user-container{
+  grid-column: 2;
+  grid-row: 1;
+  color: #9BA4B5;
+  font-size: 10px;
+  text-align: justify;
+  margin-top: 2%;
+}
+
+.element-date-container{
+  grid-column: 3;
+  grid-row: 1;
+  font-size: 8px;
+  color: #9BA4B5;
+}
+
+.element-date-container p{
+  margin: 15% 5%;
+}
+
+.element-title-container{
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 10px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.element-labels-container{
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  margin-top: 1%;
+}
+
+.element-labels-container p{
+  margin: 1%;
+  font-size: 10px;
+  color: #9BA4B5;
+}
+
+.element-description-container{
+  grid-column: 2;
+  grid-row: 4/5;
+  margin-top: 1%;
+  margin-top: -2%;
+}
+
+.element-description-container p{
+  text-align: justify;
+  font-size: 10px;
   
-  .element-img { grid-area: 1 / 1 / 6 / 2; }
-  .element-user-container { grid-area: 1 / 2 / 2 / 5; }
-  .element-date-container { grid-area: 1 / 5 / 2 / 6; }
-  .element-title-container { grid-area: 2 / 2 / 3 / 5; }
-  .element-labels-container { grid-area: 3 / 2 / 4 / 5; }
-  .element-description-container { grid-area: 4 / 2 / 6 / 4; }
-  .element-reactions-container { grid-area: 5 / 4 / 6 / 6; }
+}
+
+.element-reactions-container{
+  grid-column: 3;
+  grid-row: 5;
+  display: flex;
+  color: #9BA4B5;
+  font-size: 10px;
+  line-height: 30px;
+  margin-top: -10%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.element-reactions-container span{
+  margin: 2%
+}

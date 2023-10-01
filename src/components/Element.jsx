@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Element() {
   return (
-    <div id='element-container' className='parent'>
+    <div id='element-container'>
         <div className='element-img'>
         <img id='element-img' alt='user' src='https://avatarfiles.alphacoders.com/266/thumb-266629.jpg'></img>
         </div>
@@ -28,9 +28,9 @@ export default function Element() {
             el polimorfismo, entre otros...
         </p>
         </div>
-        <div className='.element-reactions-container'>
-            <span class="material-symbols-outlined">favorite</span>
-            <label htmlFor="">14</label>
+        <div className='element-reactions-container'>
+            <span class="material-symbols-outlined" id='favorite'>favorite</span>
+            <label htmlFor="favorite">14</label>
             <span class="material-symbols-outlined">mode_comment</span>
             <label htmlFor="">30</label>
             <span class="material-symbols-outlined">bookmark</span>
