@@ -1,5 +1,21 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
+/* GENERAL */
+:root { 
+  --primary-color: #F2BE22;
+  --btn-news: #F29727;
+  --btn-succesful: #1C82AD;
+  --btn-cancel: #FF0000;
+  /* ligth mode */
+  --full-light-container: #F7F9F9;
+  --other-container: #D5DBDB;
+  --primary-light-text: #000;
+  --second-light-container: #273746;
+  --element-light-container: #566573;
+  /* dark mode */
+  --full-dark-container: #2B2B2B;
+  --search-dark-container: #9BA4B5;
+  --primary-dark-text: #fff;
+  --second-dark-container: #9BA4B5;
+  --element-dark-container: #423F3E;
 }
 
 /* ICONS */
@@ -12,7 +28,38 @@ body{
 }
 
 /* (layout) Initial */
+.initial-container {
+  align-items: normal;
+}
 
+.initial-btn-home {
+  position: absolute;
+  width: 2vw;
+  height: 3vh;
+  background-color: var(--primary-color);
+  border-radius: 10rem;
+  left: 1vw;
+  top: 1vw;
+}
+.initial-btn-home-icon {
+  color: var(--primary-light-text);
+  align-self: center;
+  padding-top: 0.5vh;
+  font-variation-settings: 
+  'wght' 700,
+  'FILL' 1
+}
+
+/* (components) InitialForm */
+.initial-form-container {
+  width: 30%;
+  height: 50vh;
+  border: 3px solid var(--primary-color);
+  border-radius: 0.5rem;
+  background: transparent;
+  margin-left: 35%;
+  margin-top: 10%;
+}
 
 /* (components) Element */
 #element-container{
