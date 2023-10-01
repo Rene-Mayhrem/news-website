@@ -281,3 +281,37 @@
 .interaction-container :hover{
   color: var(--full-light-container);
 }
+
+/* (components) Comment */
+
+.comment-container{
+  display: flex;
+  gap: 1em;
+  background-color: var(--element-dark-container);
+  width: 50%;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.comment-container img{
+  border-radius: 100px;
+  width: 10%;
+  height: 30%;
+  margin: auto 0;
+}
+
+.comment-container textarea{
+  resize: none;
+  width: 100%;
+  height: 7em;
+  background-color: var(--element-dark-container);
+  border: var(--other-container) 1px solid;
+  color: var(--primary-dark-text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  padding: 1em;
+}
+
+.comment-container textarea:focus{
+  outline: none;
+}
