@@ -175,3 +175,69 @@
   border-radius: 50px;
   margin: auto 5%;
 }
+
+/* (components) User */
+
+.user-container{
+  display: grid;
+  grid-template-columns: 10% 80%;
+  grid-template-rows: auto auto auto auto;
+  background-color: var(--element-dark-container);
+  width: 25%;
+  color: var(--primary-dark-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-img-container img{
+  border-radius: 100px;
+  width: 4em;
+}
+
+.user-img-container{
+  grid-column: 1;
+  grid-row: 1;
+  margin: 1em 5em 0 1em;
+}
+
+.user-name-container{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.user-name-container p{
+  text-align: left;
+  margin: 2em 4em;
+  font-weight: 600;
+}
+
+.user-button-container{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.user-button-container button{
+  background-color: var(--primary-color);
+  border: none;
+  padding: 2% 10%;
+  color: var(--primary-light-text);
+  font-size: larger;
+  cursor: pointer;
+  width: 60%;
+}
+
+.user-tags-title-container{
+  grid-column: 2;
+  grid-row: 3;
+  color: var(--second-dark-container);
+  font-size: small;
+}
+
+.user-tags-container{
+  grid-column: 1/2;
+  grid-row: 4;
+  display: flex;
+  gap: 1em;
+  margin: 0 100% 100% 100%;
+  color: var(--second-dark-container);
+  font-size: small;
+}
