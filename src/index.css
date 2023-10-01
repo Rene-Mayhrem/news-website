@@ -154,3 +154,24 @@
 .element-reactions-container span{
   margin: 2%
 }
+
+/* (components) Editor */
+
+.editor-container{
+  display: flex;
+  background-color: var(--element-dark-container);
+  gap: 2%;
+  width: 20%;
+  color: var(--primary-dark-text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.editor-img{
+  width: 17%;
+  height: 15%;
+  border-radius: 10px;
+  margin: auto 5%;
+}
