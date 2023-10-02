@@ -1,0 +1,11 @@
+
+/* *********************************************************************************  */
+/* Media screen: 500px */
+/* (components) Initial form */
+@media screen and (max-width: 500px) {
+    .initial-form-container {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 70%;
+    }
+  }
