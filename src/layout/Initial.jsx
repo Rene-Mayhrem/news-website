@@ -6,7 +6,7 @@ export default function Initial() {
   return (
     <div className="initial-container">
       {/* home button */}
-      <Link className="initial-btn-home">
+      <Link className="initial-btn-home" to="/">
         <span className="material-symbols-outlined initial-btn-home-icon">
           home
         </span>
