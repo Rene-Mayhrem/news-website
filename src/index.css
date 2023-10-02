@@ -80,6 +80,7 @@ body {
 
 
 /* (components) Element */
+
 #element-container{
   display: grid;
   background-color: var(--clr-element-dark-container);
@@ -89,6 +90,11 @@ body {
   color: var(--clr-dark-normal-text);
   border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0.8em;
+}
+
+.element-subtext {
+  text-transform: uppercase;
 }
 
 .element-img{
@@ -147,8 +153,7 @@ body {
 .element-description-container{
   grid-column: 2;
   grid-row: 4/5;
-  margin-top: 1%;
-  margin-top: -2%;
+  margin-top: 0.2em;
 }
 
 .element-description-container p{
@@ -382,37 +387,11 @@ body {
   display: block;
 }
 
-/* *********************************************************************************  */
-/* Media screen: 1500px */
+/* (components) Header */
 
-
-/* (components) Initial form */
-@media screen and (max-width: 1500px) {
-  .initial-form-container {
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 30%;
-  }
-}
-
-/* *********************************************************************************  */
-/* Media screen: 1000px */
-/* (components) Initial form */
-@media screen and (max-width: 1000px) {
-  .initial-form-container {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 45%;
-  }
-}
-
-/* *********************************************************************************  */
-/* Media screen: 500px */
-/* (components) Initial form */
-@media screen and (max-width: 500px) {
-  .initial-form-container {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 70%;
-  }
+.header-navbar {
+  width: 100vw;
+  background-color: var(--clr-element-dark-container);
+  font: var(--clr-dark-normal-text);
+  height: 5em;
 }
