@@ -16,12 +16,12 @@ export default function UserMenu() {
       </div>
       {isMenuVisible && (
         <div className='usermenu-dropdown'>
-          <a href='#'>Link 1</a>
+          <a href='#'>René Cruz</a>
           <hr />
-          <a href='#'>Link 2</a>
-          <a href='#'>Link 3</a>
+          <a href='#'>Dashboard</a>
+          <a href='#'>Guardados</a>
           <hr />
-          <a href='#'>Link 4</a>
+          <a href='#'>Cerrar Sesión</a>
         </div>
       )}
   </div>
