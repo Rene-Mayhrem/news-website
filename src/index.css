@@ -23,7 +23,7 @@
   --font-normal-size: 16px;
 }
 
-/* General tags */
+
 
 body {
   margin: 0;
@@ -451,6 +451,12 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: var(--clr-dark-normal-text);
+}
+
+#magazine-filter-container .material-symbols-outlined {
+  font-size: 3em;
+  color: var(--clr-dark-normal-text);
+  display: none;
 }
 
 /* (collection) MagazineCollection */
