@@ -1,18 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import User from '../components/User'
-import Header from '../components/Header'
-import Element from '../components/Element'
+import React from "react";
+
+import Header from "../components/Header";
+import MagazineFilter from "../components/MagazineFilter";
+import MagazineCollection from "../collection/MagazineCollection";
+import EditorCollection from "../collection/EditorCollection";
+import ReporterCollection from "../collection/ReporterCollection";
+import TagCollection from "../collection/TagCollection";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="home-container">
       <Header></Header>
-      <Element></Element>
-      <Element></Element>
-      <Element></Element>
-      <Element></Element>
-      <Link to="/login">Login</Link>
+      <MagazineFilter></MagazineFilter>
+      <MagazineCollection></MagazineCollection>
+      <EditorCollection></EditorCollection>
+      <ReporterCollection></ReporterCollection>
+      <TagCollection></TagCollection>
+      <Footer></Footer>
     </div>
-  )
+  );
 }
