@@ -1,12 +1,24 @@
 /* *********************************************************************************  */
 /* Media screen: 1500px */
 
-
-/* (components) Initial form */
 @media screen and (max-width: 1500px) {
-    .initial-form-container {
-      width: 60%;
-      margin-left: 20%;
-      margin-top: 30%;
-    }
+  /* (components) Initial form */
+  .initial-form-container {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 30%;
   }
+
+  /* (component) Home */
+  .home-container {
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 0.3fr 0.2fr 2fr 2fr 2fr 0.2fr;
+    grid-template-areas:
+      "header header"
+      "menu-filter tag"
+      "element tag"
+      "element editor"
+      "element reporter"
+      "footer reporter";
+  }
+}
