@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './media1500.css'
+import './media1200.css'
+import './media820.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

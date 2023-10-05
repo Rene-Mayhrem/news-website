@@ -7,18 +7,18 @@ export default function Element() {
         <img id='element-img' alt='user' src='https://avatarfiles.alphacoders.com/266/thumb-266629.jpg'></img>
         </div>
         <div className='element-user-container'>
-        <p>René Cruz</p>
+        <p className='element-subtext'>René Cruz</p>
         </div>
         <div className='element-date-container'>
-        <p>22/Sep/2023</p>
+        <p className='element-subtext'>22/Sep/2023</p>
         </div>
         <div className='element-title-container'>
         <h1>Programación Orientada a Objetos en JavaScript</h1>
         </div>
         <div className='element-labels-container'>
-        <p>#javascript</p>
-        <p>#poo</p>
-        <p>#beginners</p>
+        <p className='element-subtext'>#javascript</p>
+        <p className='element-subtext'>#poo</p>
+        <p className='element-subtext'>#beginners</p>
         </div>
         <div className='element-description-container'>
         <p>Esta revista maneja los conceptos básicos 
