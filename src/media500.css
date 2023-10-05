@@ -42,27 +42,40 @@ body {
 }
 
 /* *********************************************************************************  */
-/* Media screen: 1500px */
-
-@media screen and (max-width: 1500px) {
+/* Media screen: 500px */
+@media screen and (min-width: 500px) {
   /* (components) Initial form */
   .initial-form-container {
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 30%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 70%;
   }
 
   /* (component) Home */
   .home-container {
-    grid-template-columns: 4fr 2fr;
-    grid-template-rows: 0.3fr 0.2fr 2fr 2fr 2fr 0.2fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 2fr 0.2fr;
     grid-template-areas:
-      "header header"
-      "menu-filter tag"
-      "element tag"
-      "element editor"
-      "element reporter"
-      "footer reporter";
+      "header"
+      "element"
+      "footer";
+  }
+
+  #tag-collection-container {
+    display: none;
+  }
+
+  #reporter-collection-container {
+    display: none;
+  }
+
+  #editor-collection-container {
+    display: none;
+  }
+
+  /* (components) MgazineFilter */
+  .magazine-filter-link {
+    margin-top: 1.5em;
   }
 
 
