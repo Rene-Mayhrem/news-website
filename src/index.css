@@ -414,14 +414,6 @@ body {
   display: block;
 }
 
-/* (components) Header */
-
-.header-navbar {
-  border: 1px solid white;
-  grid-area: header;
-  top: 0;
-  width: 100%;
-}
 
 /* (components) MagazineFilter */
 
@@ -487,8 +479,12 @@ body {
 }
 
 /* (components) Header */
- 
-.header-container{
+
+.header-navbar {
+  border: 1px solid white;
+  grid-area: header;
+  top: 0;
+  width: 100%;
   display: flex;
   background-color: var(--clr-element-dark-container);
   height: 3em;
@@ -503,7 +499,6 @@ body {
   border-radius: 5px;
   width: 2.5em;
   min-width: 2.5em;
-  margin-top: .3em;
   padding: .3em 0;
 }
 
@@ -530,7 +525,8 @@ body {
   border: none;
   cursor: pointer;
   background-color: var(--clr-container-gray);
-  border-radius: 100px;
+  border-radius: 50px;
+  margin-right: 10em;
   position: absolute;
   top: 1em;
 }
