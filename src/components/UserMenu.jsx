@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function UserMenu() {
+export function UserMenu() {
 
     const [isMenuVisible, setMenuVisible] = useState(false);
 
