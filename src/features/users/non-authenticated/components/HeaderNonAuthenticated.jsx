@@ -1,31 +1,23 @@
 import React from "react";
 import "./HeaderNonAuthenticated.css";
+import { Link } from "react-router-dom";
 
 export default function HeaderNonAuthenticated() {
   return (
     <div className="header-non-authenticated">
-      <div className="img-user">
-        <img
-          src="https://avatarfiles.alphacoders.com/266/thumb-266629.jpg"
-          alt=""
-        />
+      <div className="img-logo">
+        <Link className="header-link-login" to="/login">JS</Link>
       </div>
       <div className="search-bar">
         <input type="text" placeholder="search..." />
-        <button>
+        <div className="search-logo-container">
           <span className="material-symbols-outlined">search</span>
-        </button>
+        </div>
       </div>
       <div className="button-container">
-        <div>
-          <button className="btn-unrounded">Iniciar Sesión</button>
-        </div>
-        <div>
-          <button className="btn-rounded">Crear Cuenta</button>
-        </div>
-        <div className="header-lightmode-container">
-          <span className="material-symbols-outlined">light_mode</span>
-        </div>
+        <button className="btn-header btn-login">Iniciar sesión</button>
+        <button className="btn-header btn-signin">Crear cuenta</button>
+        <span class="material-symbols-outlined">wb_sunny</span>
       </div>
     </div>
   );
