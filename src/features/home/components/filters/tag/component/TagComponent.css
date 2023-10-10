@@ -1,0 +1,21 @@
+
+.tag-component {
+    color: #000;
+    width: fit-content;
+    height: fit-content;
+    padding: 1px 1px;
+    grid-column: span 2;
+    min-width: 35px;
+    opacity: 0.5;
+}
+
+.tag-component:hover {
+    transition: 0.2s ease;
+    opacity: 1;
+}
+
+.tag-component p {
+    font-weight: lighter;
+    align-self: center;
+    text-align: center;
+}

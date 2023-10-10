@@ -1,0 +1,144 @@
+:root {
+  /*  color */
+  --clr-primary: #f2be22;
+  --clr-primary-hover: #c59c1f;
+  --clr-btn-news: #f29727;
+  --clr-btn-succesful: #1c82ad;
+  --clr-btn-cancel: #ff0000;
+  /* ligth mode */
+  --clr-background-light: #f7f9f9;
+  --clr-container-gray: #d5dbdb;
+  --clr-ligth-normal-text: #000;
+  --clr-header-light-text: #273746;
+  --clr-element-light-container: #566573;
+  /* dark mode */
+  --clr-background-dark: #2b2b2b;
+  --clr-dark-search: #9ba4b586;
+  --clr-dark-normal-text: #fff;
+  --clr-header-dark-text: #9ba4b5;
+  --clr-element-dark-container: #423f3e;
+  /* size */
+  --border-radius: 0.5rem;
+  --font-normal-size: 16px;
+}
+
+.header-non-authenticated {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-element-dark-container);
+  display: flex;
+  top: 0;
+  gap: 4em;
+}
+
+.img-logo {
+  margin: 1.2em;
+  background-color: var(--clr-primary);
+  width: 5em;
+  height: 4em;
+}
+
+.img-logo:hover {
+    background-color: var(--clr-primary-hover);
+}
+
+.header-link-login {
+    font-size: 25px;
+    color: var(--clr-ligth-normal-text);
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    top: 25%;
+}
+
+.search-bar {
+    margin: 1.2em;
+    position: relative;
+    width: 25%;
+    height: 4em;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    background-color: var(--clr-dark-search);
+    border: none;
+    margin-right: 40%;
+}
+
+.search-bar input::placeholder {
+    color: var(--clr-dark-normal-text);
+    position: relative;
+    left: 2em;
+}
+
+.search-logo-container {
+    color: var(--clr-dark-normal-text);
+    left: 90%;
+    position: relative;
+    width: 10%;
+    top: -70%;
+    height: 40%;
+}
+
+.search-bar .material-symbols-outlined {
+    font-size: 300;
+}
+
+.button-container {
+    margin-left: 40%;
+    width: 40%;
+}
+
+.btn-header {
+    margin-right: 1em;
+    width: 30%;
+    height: 60%;
+    position: relative;
+    top: 5%;
+    border-radius: 5px;
+}
+
+.btn-login {
+    border: none;
+    background-color: transparent;
+    color: var(--clr-header-dark-text);
+}
+
+.btn-login:hover {
+    background-color: #f2972785;
+    color: var(--clr-dark-normal-text);
+    transition: 0.2s ease;
+}
+
+.btn-signin {
+    border: 1px solid var(--clr-btn-news);
+    background-color: transparent;
+    color: var(--clr-btn-news);
+}
+
+.btn-signin:hover {
+    color: var(--clr-ligth-normal-text);
+    background-color: var(--clr-btn-news);
+    transition: 0.2s ease;
+}
+
+.button-container .material-symbols-outlined {
+    font-size: 3em;
+    color: var(--clr-dark-normal-text);
+    position: relative;
+    top: 25%;
+    left: 5%;
+}
+
+.button-container .material-symbols-outlined:hover {
+    color: var(--clr-primary)
+}
+
+@media screen and (max-width: 1200px) {
+    .button-container {
+        width: 80%;
+    }
+}

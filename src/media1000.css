@@ -35,33 +35,13 @@ body {
 }
 
 /* *********************************************************************************  */
-/* Media screen: 1500px */
-
-@media screen and (min-width: 767px) {
-  /* (pages - initial) Login  */
-  .login-container {
-    width: 60%;
-    height: 70%;
-    left: 20%;
-    top: 15%;
+/* Media screen: 1000px */
+/* @media screen and (min-width: 767px) { */
+  /* (components - initial) Login */
+  /* .login-container {
+    width: 70%;
+    height: 80%;
+    left: 15%;
+    top: 10%;
   }
-
-  .login-logo {
-    width: 12em;
-    height: 12em;
-    top: -10%;
-    left: 47%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* (pages - initial) Login  */
-  .login-container {
-    width: 80%;
-    height: 70%;
-    left: 10%;
-    top: 15%;
-  }
-}
-
-
+} */

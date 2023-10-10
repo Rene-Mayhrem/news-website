@@ -1,0 +1,163 @@
+/* GENERAL */
+:root {
+  /*  color */
+  --clr-primary: #f2be22;
+  --clr-primary-hover: #c59c1f;
+  --clr-btn-news: #f29727;
+  --clr-btn-succesful: #1c82ad;
+  --clr-btn-cancel: #ff0000;
+  /* ligth mode */
+  --clr-background-light: #f7f9f9;
+  --clr-container-gray: #d5dbdb;
+  --clr-ligth-normal-text: #000;
+  --clr-header-light-text: #273746;
+  --clr-element-light-container: #566573;
+  /* dark mode */
+  --clr-background-dark: #2b2b2b;
+  --clr-dark-search: #9ba4b5;
+  --clr-dark-normal-text: #fff;
+  --clr-header-dark-text: #9ba4b5;
+  --clr-element-dark-container: #423f3e;
+  /* size */
+  --border-radius: 0.5rem;
+  --font-normal-size: 16px;
+}
+
+.container {
+  position: absolute;
+  border: 5px solid var(--clr-primary);
+  border-radius: 0.2rem;
+  box-shadow: 15px 15px 15px rgb(172, 172, 172);
+  align-items: normal;
+}
+
+.logo {
+  border-radius: 50%;
+  background-color: var(--clr-primary);
+  position: relative;
+}
+
+.logo span {
+  font-size: 1.5em;
+  position: absolute;
+  font-weight: bold;
+}
+
+.logo:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.login {
+  position: absolute;
+  font-size: 2em;
+  left: 0;
+  width: 400px;
+}
+
+p {
+  text-align: left;
+  font-size: 0.95em;
+  font-weight: 800;
+}
+
+label {
+  padding: 10px;
+  color: var(--clr-header-dark-text);
+}
+
+.authentication {
+  display: flex;
+  padding: 10px;
+  font-size: 20px;
+  left: 0;
+}
+
+.login span {
+  display: none;
+}
+.text {
+  padding: 10px 0;
+  margin: 10px 0;
+  background-color: var(--clr-container-gray);
+}
+
+.forgot-password {
+  text-decoration: none;
+  color: var(--clr-btn-news);
+  font-size: 20px;
+  margin: 10px;
+  position: relative;
+}
+
+.container button {
+  display: none;
+}
+
+.login input {
+  border: none;
+}
+
+.btn-login-submit {
+  margin-bottom: 10px;
+  background-color: var(--clr-primary);
+  font-size: 1em;
+}
+
+/* computers (form)*/
+@media screen and (min-width: 767px) {
+  .container {
+    width: 35%;
+    height: 50%;
+    left: 32.5%;
+    top: 25%;
+  }
+
+  .logo {
+    width: 30%;
+    left: 37.5%;
+    top: -15%;
+  }
+
+  .logo span {
+    left: 22%;
+    top: 45%;
+    color: var(--clr-ligth-normal-text);
+  }
+
+  .login {
+    width: 80%;
+    left: 5%;
+    top: 15%;
+    height: 60%;
+    padding: 10% 5%;
+  }
+
+  .login input {
+    width: 100%;
+    height: 2em;
+    border-radius: 5px;
+  }
+}
+
+/* tablets and phones (form))*/
+@media screen and (max-width: 767px) {
+  .container {
+    width: 80%;
+    height: 75%;
+    left: 10%;
+    top: 15%;
+  }
+  .logo {
+    width: 30%;
+    left: 35%;
+    top: -8%;
+  }
+  .logo span {
+    top: 20%;
+    font-size: 1.2em;
+    top: 45%;
+    left: 18%;
+  }
+}
