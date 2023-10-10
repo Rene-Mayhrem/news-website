@@ -91,7 +91,7 @@ label {
   position: relative;
 }
 
-button {
+.container button {
   display: none;
 }
 
